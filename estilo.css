@@ -5,28 +5,31 @@ padding: 0;
 }
 
 body {
-    display:  flex;
+    display:  flex; margin: 88;
+    font-size: 300;
+    line-height: 55,88;
+    color: rgb(182, 61, 13);
     flex-direction: column;
     min-height: 100vh;
-    background-color:rgb(235, 161, 112)
+    background-color:rgb(245, 159, 102)
 }
 
 .cabecalho {
     background-color: antiquewhite;
-    padding: 15 px 25 px;
+    padding: 60 px 25 px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .cabecalho-link {
-    color: rgb(177, 92, 12);
+    color: rgb(255, 156, 156);
     text-decoration:none;
 }
 
 footer {
     background-color: bisque;
     padding: 15 px 25 px;
-    color: rgb(131, 64, 19)
+    color: rgb(255, 193, 111)
 }
 
 main {
@@ -46,29 +49,30 @@ h2 {
 }
 
 .cartao {
-    width: 20px;
-    height: 20px;
-    border-radius: 20 px;
+    width: 250px;
+    height: 250px;
+    border-radius: 2000 px;
     overflow: hidden;
-    perspective: 10px;
+    perspective: 1000px;
 }
 
 cartao-imagem {
 width: 100%;
-height: 80%;
+height: 100%;
 object-fit: cover;
-border-radius: 12px;
+border-radius: 120px;
 }
 .cartao-interno {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0,8s;
+    transition: transform 6s;
     transform-style: preserve-3d;
 }
 
 .cartao-frente, .cartao-verso {
-     width: 100%;
+  position: absolute;
+  width: 100%;
   height: 100%;
   border-radius: 20px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -78,13 +82,13 @@ border-radius: 12px;
   gap: 12px;
   padding: 12px;
 
-    background-color: white;
+    background-color: rgb(253, 204, 214);
 }
 .cartao-frente p, .cartao-verso p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.3;
-    color: blanchedalmond;
+   margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #222;
 }
 
 .cartao-verso {
@@ -101,6 +105,6 @@ border-radius: 12px;
 }
 section {
 display: flex;
-gap: 16px;
+gap: 160px;
 
 }
